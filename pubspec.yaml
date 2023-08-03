@@ -1,0 +1,49 @@
+name: movie
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^5.0.0
+  flutter_riverpod: ^2.3.6
+  carousel_slider: ^4.2.1
+  flutter_gallery_3d: ^1.1.1
+  smooth_page_indicator: ^1.1.0
+  dark_light_button: ^0.0.2
+  lite_rolling_switch: ^1.0.1
+  dotted_line: ^3.2.2
+  dio: ^5.2.1+1
+  retry: ^3.1.2
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/movie_images/
+    - assets/images/splash_gif/
+    - assets/images/movie_images/random_pic_movie/
+    - assets/images/movie_images/trending_movie_screenpress/
+    - assets/images/movie_images/movies_series/
+    - assets/images/movie_images/movie_tvshows/
+    - assets/images/movie_images/movie_animation/
+    - assets/images/movie_images/new_list/
+    - assets/images/movie_images/trending_movie_screenpress/trending_list/
+    - assets/images/movie_icon/
+    - assets/images/movie_images/new_movies/
+    - assets/images/movie_user_image/
