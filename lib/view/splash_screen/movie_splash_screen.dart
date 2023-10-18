@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:movie/view/login-screen/movie_login_screen.dart';
+import 'package:movie/view/login_screen/movie_login_screen.dart';
+
+// ignore: unused_import
+import '../sign_in/movie_signin_widget.dart';
 
 class MovieSplashScreen extends StatefulWidget {
   const MovieSplashScreen({super.key});
@@ -18,7 +21,7 @@ class _MovieSplashScreenState extends State<MovieSplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: const Color(0xffffffff),
       body: Center(
           child: Container(
               child: Image.asset('assets/images/splash_gif/Splashscreen.gif'))),
@@ -26,10 +29,12 @@ class _MovieSplashScreenState extends State<MovieSplashScreen> {
   }
 
   Future<void> gotologinpage() async {
-    await Future.delayed(Duration(seconds: 4));
+    await Future.delayed(
+      const Duration(seconds: 4),
+    );
     Navigator.of(context).pushAndRemoveUntil(
       MaterialPageRoute(
-        builder: (login) => MovieLoginScreen(),
+        builder: (login) => const MovieLoginScreen(),
       ),
       (route) => false,
     );

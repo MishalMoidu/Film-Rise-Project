@@ -81,7 +81,7 @@ class MovieSeries extends ConsumerWidget {
                   ),
                 ),
                 width: AppUtils.sw(360, context) * 0.8,
-                height: AppUtils.sh(420, context),
+                height: AppUtils.sh(120, context),
               ),
             );
           },
@@ -113,7 +113,7 @@ class MovieSeries extends ConsumerWidget {
       physics: const ClampingScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisExtent: AppUtils.sh(300, context),
+        mainAxisExtent: AppUtils.sh(250, context),
       ),
       itemBuilder: (context, index) => Padding(
         padding: const EdgeInsets.all(10.0),

@@ -43,11 +43,14 @@ class BuildImage extends ConsumerWidget {
               height: AppUtils.sh(420, context),
             ),
           ),
+          SizedBox(
+            height: AppUtils.sh(5, context),
+          ),
           Text(
             result.title!,
             textAlign: TextAlign.center,
             style: GoogleFonts.exo(
-                fontSize: AppUtils.sw(26, context),
+                fontSize: AppUtils.sw(20, context),
                 fontWeight: FontWeight.w800,
                 color: !isLight
                     ? const Color(0xff0c1d1f)
@@ -61,9 +64,6 @@ class BuildImage extends ConsumerWidget {
                 color: !isLight
                     ? const Color(0xff0c1d1f)
                     : const Color(0xFFFFFFFF)),
-          ),
-          SizedBox(
-            height: AppUtils.sh(10, context),
           ),
         ],
       ),

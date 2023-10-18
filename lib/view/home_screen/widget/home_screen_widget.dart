@@ -45,7 +45,7 @@ class HomeScreenWidget extends ConsumerWidget {
             ),
             CarouselSlider.builder(
               options: CarouselOptions(
-                  height: AppUtils.sh(520, context),
+                  height: AppUtils.sh(500, context),
                   autoPlay: true,
                   autoPlayInterval: const Duration(seconds: 3),
                   viewportFraction: 1,
@@ -88,7 +88,7 @@ class HomeScreenWidget extends ConsumerWidget {
                           value: ref.watch(trendingSwitch),
                           textOn: 'Today',
                           textOff: 'This Week',
-                          width: AppUtils.sw(130, context),
+                          width: AppUtils.sw(120, context),
                           textOnColor: const Color(0xff0c1d1f),
                           textOffColor:
                               const Color.fromARGB(255, 255, 255, 255),
@@ -131,7 +131,7 @@ class HomeScreenWidget extends ConsumerWidget {
       physics: const ClampingScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisExtent: AppUtils.sh(300, context),
+        mainAxisExtent: AppUtils.sh(250, context),
       ),
       itemBuilder: (context, index) => Padding(
         padding: const EdgeInsets.all(10.0),

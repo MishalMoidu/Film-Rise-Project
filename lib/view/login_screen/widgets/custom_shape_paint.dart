@@ -4,7 +4,7 @@ class RPSCustomPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint0 = Paint()
-      ..color = Color(0xFF3b9d9b)
+      ..color = const Color(0xFF3b9d9b)
       ..style = PaintingStyle.fill
       ..strokeWidth = 1;
 

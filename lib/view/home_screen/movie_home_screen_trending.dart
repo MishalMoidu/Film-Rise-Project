@@ -29,7 +29,7 @@ class MovieHomeScreen extends ConsumerWidget {
       length: titles.length,
       child: Scaffold(
         backgroundColor: !isLight
-            ? const Color.fromARGB(255, 194, 194, 194)
+            ? const Color.fromARGB(255, 241, 241, 241)
             : const Color(0xff0c1d1f),
         drawer: const HomeDrawer(),
         drawerEnableOpenDragGesture: false,
